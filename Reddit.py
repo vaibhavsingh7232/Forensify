@@ -4,9 +4,9 @@ from datetime import datetime
 
 # Reddit API credentials
 reddit = praw.Reddit(
-    client_id="XGSS5HXrKX-UsWRs9rY1LA",
-    client_secret="rr8o99pMrm8f5QLz4wl0Nu_-VdhfQg",
-    user_agent="intruder997",
+    client_id="",
+    client_secret="",
+    user_agent="",
 )
 
 def ensure_data_directory():

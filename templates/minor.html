@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forencify</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Styles/home.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-search-location"></i>
+                <h1>Forencify</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="welcome-section">
+                <h2>Digital Forensic Analysis Platform</h2>
+                <p>Select a platform to begin your forensic investigation</p>
+            </div>
+
+            <div class="options-grid">
+                <a href="#" class="option-card">
+                    <div class="icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Analyze Instagram profiles, posts, and metadata</p>
+                </a>
+
+                <!-- In your options-grid div, update the Reddit card to: -->
+                <a href="{{ url_for('reddit') }}" class="option-card">
+                    <div class="icon reddit">
+                        <i class="fab fa-reddit"></i>
+                    </div>
+                    <h3>Reddit</h3>
+                    <p>Examine Reddit threads, users, and comment history</p>
+                </a>
+
+                <a href="{{ url_for('analyzer') }}" class="option-card">
+                    <div class="icon analyzer">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Analyzer</h3>
+                    <p>Comprehensive data analysis tools</p>
+                </a>
+
+                <!-- In your options-grid div, update the Twitter card to: -->
+                <a href="{{ url_for('twitter_search') }}" class="option-card">
+                    <div class="icon x">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <h3>X (Twitter)</h3>
+                    <p>Investigate Twitter accounts and tweet patterns</p>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <p>© Forencify | Digital Forensic Toolkit</p>
+        </footer>
+    </div>
+</body>
+</html>

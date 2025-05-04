@@ -1,0 +1,13 @@
+TWITTER{
+
+
+            CONSUMER KEYS
+        {   
+            api key = 2CqSZYXHw03czzMF1kMFjQfmW
+            api secret key = 1bFn6maxoUcU96gLHMm8LS1lCjCAsyZh3XwDH8OZkeVTuOk9lw
+        }
+        bearer token = AAAAAAAAAAAAAAAAAAAAAEgZ0AEAAAAAsC4XY%2B%2F1pxtsRSb0my1w4lAwl8c%3DW2wt5oB1a4h4h6h5QiJipVmnwGztqV6pE8bQRKhbjdxqfFbMWc
+        access token = 1902064516613222400-lKZrxenf0BwYl7VvH1wKuErU6smZrU
+        access token secret = 02SorZQjKnPMqKQzZTgfg6IHbPhjF6gkXaAObB5qPxpm4
+
+}

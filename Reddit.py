@@ -1,12 +1,12 @@
 import praw
 import os
 from datetime import datetime
-
+import csv
 # Reddit API credentials
 reddit = praw.Reddit(
-    client_id="",
-    client_secret="",
-    user_agent="",
+    client_id="XGSS5HXrKX-UsWRs9rY1LA",
+    client_secret="rr8o99pMrm8f5QLz4wl0Nu_-VdhfQg",
+    user_agent="forensify by Intruder997",
 )
 
 def ensure_data_directory():
@@ -14,7 +14,7 @@ def ensure_data_directory():
     if not os.path.exists('Data'):
         os.makedirs('Data')
 
-def fetch_reddit_data(subreddit_name, post_limit=50, comment_limit=30):
+def fetch_reddit_data(subreddit_name, post_limit=500, comment_limit=30):
     """Fetch top posts and their comments from a subreddit and save to a text file in Data folder."""
     try:
         ensure_data_directory()
@@ -22,7 +22,7 @@ def fetch_reddit_data(subreddit_name, post_limit=50, comment_limit=30):
         
         # Create filename with timestamp
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"Data/reddit_{subreddit_name}_{timestamp}.txt"
+        filename = f"Data/reddit_{subreddit_name}_{timestamp}.csv"
         
         with open(filename, 'w', encoding='utf-8') as file:
             file.write(f"Reddit Data Collection - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
